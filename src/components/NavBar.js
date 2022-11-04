@@ -7,7 +7,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg'
 import navIcon2 from '../assets/img/nav-icon2.svg'
 import navIcon3 from '../assets/img/nav-icon3.svg'
 
-function NavBar() {
+export default function NavBar() {
   const [activeLink, setActiveLink] = useState('home')
   const [scrolled, setScrolled] = useState(false)
 
@@ -46,9 +46,9 @@ function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#home"><img src={navIcon1} alt="" /></a>
-              <a href="#home"><img src={navIcon2} alt="" /></a>
-              <a href="#home"><img src={navIcon3} alt="" /></a>
+              <a href="#"><img src={navIcon1} alt="" /></a>
+              <a href="#"><img src={navIcon2} alt="" /></a>
+              <a href="#"><img src={navIcon3} alt="" /></a>
             </div>
             <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
           </span>
@@ -57,5 +57,3 @@ function NavBar() {
     </Navbar>
   )
 }
-
-export default NavBar;
